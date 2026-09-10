@@ -1,4 +1,4 @@
-import * as repository from "../repositories/customerRepository.ts";
+import * as repository from "../repositories/customerRepository";
 
 
 import type { Customer } from "../generated/prisma/client.ts";
@@ -6,7 +6,7 @@ import type { CreateCustomerDto } from "../dto/customer/createCustomerDto.ts";
 import type { UpdateCustomerDto } from "../dto/customer/updateCustomerDto.ts";
 
 
-import { NotFoundError } from "../errors/NotFoundError.ts";
+import { NotFoundError } from "../errors/NotFoundError";
 
 
 export async function findAll(): Promise<Customer[]> {
